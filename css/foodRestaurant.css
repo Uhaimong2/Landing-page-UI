@@ -1,0 +1,456 @@
+/* Reset some default styles */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work sans";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 75%;
+  margin: 0 auto;
+}
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Logo Styles */
+.logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+/* Menu Styles */
+.menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu ul li {
+  position: relative;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu ul li a:hover {
+  color: #e67e22; /* Change to your preferred hover color */
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+  position: absolute;
+  display: none !important;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block !important;
+}
+
+/* Right Section Styles */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-icon,
+.cart-icon {
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.search-icon:hover,
+.cart-icon:hover {
+  color: #e67e22; /* Change to your preferred hover color */
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #e67e22; /* Change to your preferred button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-button:hover {
+  background-color: #d35400; /* Change to your preferred hover color */
+}
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgb(9, 9, 9) 3.482%,
+    rgba(16, 16, 16, 0) 101.632%
+  );
+}
+
+/* Banner image */
+.banner-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Banner content */
+.banner-content {
+  text-align: center;
+  color: white;
+  z-index: 1;
+  padding: 0 376px;
+}
+
+/* Banner heading */
+.banner-heading {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Banner description */
+.banner-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Banner button */
+.banner-button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  color: white;
+  border-radius: 8px;
+  background: #52c303;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+  background-color: #46a502;
+}
+
+/* Menu Section Styles */
+.menu-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.section-titles {
+  margin-bottom: 40px;
+}
+
+.small-title {
+  font-size: 18px;
+  color: #e67e22; /* Adjust color as needed */
+  margin-bottom: 10px;
+}
+
+.big-title {
+  font-size: 36px;
+  color: #333;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.category-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-10px); /* Add hover effect */
+}
+
+.food-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.category-name {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.item-count {
+  font-size: 16px;
+  color: #777;
+}
+
+/* Special Offers Section Styles */
+.special-offers {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+
+.offers-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.titles .small-title {
+  font-size: 18px;
+  color: #e67e22; /* Adjust color as needed */
+  margin-bottom: 10px;
+}
+
+.titles .big-title {
+  font-size: 36px;
+  color: #333;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navigation-buttons button {
+  background-color: #e67e22;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.navigation-buttons button:hover {
+  background-color: #d35400; /* Darker shade on hover */
+}
+
+.dishes-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Favorite Button Styles */
+.favorite-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  color: #e67e22; /* Heart icon color */
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.favorite-button:hover {
+  color: #d35400; /* Darker shade on hover */
+}
+
+/* Dish Card Positioning */
+.dish-card {
+  position: relative; /* Required for absolute positioning of the favorite button */
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+}
+
+.dish-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.dish-name {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dish-description {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.dish-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-size: 18px;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.rating {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer Section Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #e67e22; /* Adjust color as needed */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #e67e22; /* Hover color */
+}
+
+.footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-contact li {
+  margin-bottom: 10px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-contact i {
+  color: #e67e22; /* Icon color */
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #ccc;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #e67e22; /* Hover color */
+}
+
+.copyright {
+  font-size: 14px;
+  color: #ccc;
+}

@@ -6,10 +6,238 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
     <title>Landing UI</title>
+    <!-- Font link (font-family: Work sans)-->
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Add Font Awesome for icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- css link -->
+
+    <link rel="stylesheet"
+        href="./css/foodRestaurant.css">
 </head>
 
 <body>
-    <h1>Hello</h1>
+    <!-- Header section -->
+    <header class="header">
+        <!-- Logo on the left -->
+        <div class="logo">
+            <img src="./assets/logo.png"
+                alt="Restaurant Logo">
+        </div>
+
+        <!-- Menu bar in the middle -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#">Menu <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Dinner</a></li>
+                        <li><a href="#">Wines</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Services <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="#">Online Order</a></li>
+                        <li><a href="#">Reservation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Offers</a></li>
+            </ul>
+        </nav>
+
+        <!-- Right side icons and button -->
+        <div class="right-section">
+            <div class="search-icon">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <button class="contact-button">Contact</button>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <div class="banner">
+        <img src="./assets/food/hero-bg.png"
+            alt="Banner Image"
+            class="banner-image">
+        <div class="banner-content">
+            <p>Savor the Flavors</p>
+            <h1 class="banner-heading">Experience Culinary Excellence Food Experience</h1>
+            <p class="banner-description">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                roots in a piece of classical Latin literature
+                from 45 BC, making it over 2000 years old. Richard McClintock</p>
+            <button class="banner-button">Shop The Hotest Food</button>
+        </div>
+    </div>
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="section-titles">
+            <h3 class="small-title">Customer Favorites</h3>
+            <h1 class="big-title">Popular Categories</h1>
+        </div>
+
+        <div class="categories">
+            <!-- Main Dish Card -->
+            <div class="category-card">
+                <img src="./assets/food/biriyani.png"
+                    alt="Main Dish"
+                    class="food-image">
+                <h2 class="category-name">Main Dish</h2>
+                <p class="item-count">86 Dishes</p>
+            </div>
+
+            <!-- Breakfast Card -->
+            <div class="category-card">
+                <img src="./assets/food/burger.png"
+                    alt="Breakfast"
+                    class="food-image">
+                <h2 class="category-name">Break Fast</h2>
+                <p class="item-count">12 Break Fast</p>
+            </div>
+
+            <!-- Dessert Card -->
+            <div class="category-card">
+                <img src="./assets/food/pizza.png"
+                    alt="Dessert"
+                    class="food-image">
+                <h2 class="category-name">Dessert</h2>
+                <p class="item-count">48 Dessert</p>
+            </div>
+
+            <!-- Browse All Card -->
+            <div class="category-card">
+                <img src="./assets/food/foods.png"
+                    alt="Browse All"
+                    class="food-image">
+                <h2 class="category-name">Browse All</h2>
+                <p class="item-count">255 Items</p>
+            </div>
+        </div>
+    </section>
+    <!-- Special Offers Section -->
+    <section class="special-offers container">
+        <div class="offers-header">
+            <div class="titles">
+                <h3 class="small-title">Special Dishes</h3>
+                <h1 class="big-title">Standout Dishes From Our Menu</h1>
+            </div>
+            <div class="navigation-buttons">
+                <button class="prev-button"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+
+        <div class="dishes-container">
+            <!-- Dish 1 -->
+            <div class="dish-card">
+                <button class="favorite-button"><i class="fas fa-heart"></i></button>
+                <img src="./assets/food/special1.png"
+                    alt="Dish 1"
+                    class="dish-image">
+                <h2 class="dish-name">Grilled Salmon</h2>
+                <p class="dish-description">Freshly grilled salmon with a hint of lemon and herbs.</p>
+                <div class="dish-details">
+                    <span class="price">$15.99</span>
+                    <span class="rating">⭐ 4.5</span>
+                </div>
+            </div>
+
+            <!-- Dish 2 -->
+            <div class="dish-card">
+                <button class="favorite-button"><i class="fas fa-heart"></i></button>
+                <img src="./assets/food/special2.png"
+                    alt="Dish 2"
+                    class="dish-image">
+                <h2 class="dish-name">Beef Steak</h2>
+                <p class="dish-description">Juicy beef steak cooked to perfection with a side of veggies.</p>
+                <div class="dish-details">
+                    <span class="price">$22.99</span>
+                    <span class="rating">⭐ 4.8</span>
+                </div>
+            </div>
+
+            <!-- Dish 3 -->
+            <div class="dish-card">
+                <button class="favorite-button"><i class="fas fa-heart"></i></button>
+                <img src="./assets/food/special3.png"
+                    alt="Dish 3"
+                    class="dish-image">
+                <h2 class="dish-name">Pasta Carbonara</h2>
+                <p class="dish-description">Creamy pasta with bacon and parmesan cheese.</p>
+                <div class="dish-details">
+                    <span class="price">$12.99</span>
+                    <span class="rating">⭐ 4.7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Column 1: Logo and Description -->
+            <div class="footer-column">
+                <img src="./assets/logo.png"
+                    alt="Restaurant Logo"
+                    class="footer-logo">
+                <p class="footer-description">Savor the artistry where every dish is a culinary masterpiece.</p>
+            </div>
+
+            <!-- Column 2: Useful Links -->
+            <div class="footer-column">
+                <h3 class="footer-title">Useful Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Main Menu -->
+            <div class="footer-column">
+                <h3 class="footer-title">Main Menu</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Menus</a></li>
+                    <li><a href="#">Reservation</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Contact Us -->
+            <div class="footer-column">
+                <h3 class="footer-title">Contact Us</h3>
+                <ul class="footer-contact">
+                    <li><i class="fas fa-envelope"></i> uhaimong.me@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +8801516341885</li>
+                    <li><i class="fas fa-comment"></i> Quick Message</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Icons and Copyright -->
+        <div class="footer-bottom">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© The Red Cafe | All rights reserved</p>
+        </div>
+    </footer>
 </body>
 
 </html>
